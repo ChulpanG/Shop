@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/dependency/Shop.war --port $PORT target/*.war
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* Shop.Shop
