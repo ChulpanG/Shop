@@ -39,7 +39,7 @@ CREATE TABLE  app_user  (
    ZIP_CODE  varchar(15) DEFAULT NULL,
    PHONE_NUMBER  varchar(15) DEFAULT NULL,
    STREET_NAME  varchar(50) DEFAULT NULL,
-   UNIQUE KEY ( sso_id )
+   UNIQUE ( sso_id )
 ) ;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
