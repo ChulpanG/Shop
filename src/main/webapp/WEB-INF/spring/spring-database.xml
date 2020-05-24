@@ -17,7 +17,7 @@
 			location="classpath:application.properties,
           classpath:mail.properties"
 			ignore-unresolvable="true"/>
-	
+
 	<bean class="java.net.URI" id="dbUrl">
 		<constructor-arg value="#{systemEnvironment['DATABASE_URL']}"/>
 	</bean>
@@ -27,7 +27,7 @@
 		<property name="driverClassName" value="${jdbc.driver}" />
 		<property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }" />
 		<property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }" />
-		<property name="password" value="#{ @dbUrl.getUserInfo().split(':')[0] }" />
+		<property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }" />
 	</bean>
 
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
