@@ -69,7 +69,7 @@ SET default_with_oids = false;
 -- Name: app_user; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE app_user (
+CREATE TABLE public.app_user (
     id integer NOT NULL,
     sso_id character varying(30) NOT NULL,
     password character varying(100) NOT NULL,
@@ -368,9 +368,9 @@ INSERT INTO public.app_user_user_profile (user_id, user_profile_id) VALUES (2, 2
 --
 
 INSERT INTO public.category (id, category_name) VALUES (1, 'Breakfast');
-INSERT INTO public.category (id, category_name) VALUES (2, 'Lanch');
-INSERT INTO public.category (id, category_name) VALUES (3, 'Dinner');
-INSERT INTO public.category (id, category_name) VALUES (4, 'Other');
+INSERT INTO public.category (id, category_name) VALUES (DEFAULT , 'Lanch');
+INSERT INTO public.category (id, category_name) VALUES (DEFAULT , 'Dinner');
+INSERT INTO public.category (id, category_name) VALUES (DEFAULT , 'Other');
 
 
 --
@@ -395,10 +395,10 @@ INSERT INTO public.category (id, category_name) VALUES (4, 'Other');
 -- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (2, 'This is dish', 'Dish', 12.00, 1);
-INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (3, 'Soup', 'Soup', 23.00, 2);
-INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (4, 'Meat', 'Meat', 14.00, 3);
-INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (5, 'Other', 'Other', 178.00, 4);
+INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (DEFAULT , 'This is dish', 'Dish', 12.00, 1);
+INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (DEFAULT , 'Soup', 'Soup', 23.00, 2);
+INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (DEFAULT , 'Meat', 'Meat', 14.00, 3);
+INSERT INTO public.product (id, product_description, product_name, product_price, category_id) VALUES (DEFAULT , 'Other', 'Other', 178.00, 4);
 
 
 --
@@ -407,9 +407,9 @@ INSERT INTO public.product (id, product_description, product_name, product_price
 -- Data for Name: user_profile; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.user_profile (id, type) VALUES (1, 'ADMIN');
-INSERT INTO public.user_profile (id, type) VALUES (2, 'USER');
-INSERT INTO public.user_profile (id, type) VALUES (3, 'DBA');
+INSERT INTO public.user_profile (id, type) VALUES (1, 'USER');
+INSERT INTO public.user_profile (id, type) VALUES (2, 'DBA');
+INSERT INTO public.user_profile (id, type) VALUES (3, 'ADMIN');
 
 
 

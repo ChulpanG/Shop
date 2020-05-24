@@ -9,7 +9,7 @@ var cartApp = angular.module('cartApp', []);
 
             $http({
                 method: 'GET',
-                url: 'http://localhost:8080/rest/cart/' + cartId
+                url: 'https://chgoodb.herokuapp.com/rest/cart/' + cartId
             }).then(function successRefresh(data) {
                 $scope.cart = data.data;
                 console.log($scope.cart);
