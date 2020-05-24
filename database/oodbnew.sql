@@ -69,7 +69,7 @@ SET default_with_oids = false;
 -- Name: app_user; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.app_user (
+CREATE TABLE app_user (
     id integer NOT NULL,
     sso_id character varying(30) NOT NULL,
     password character varying(100) NOT NULL,
