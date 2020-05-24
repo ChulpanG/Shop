@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+    <!-- Home page and verification stage definitions -->
+
+    <definition name="shop.base" template="/WEB-INF/views/definitions/layout.jsp">
+        <put-attribute name="includes" value=""></put-attribute>
+        <put-attribute name="title" value="WebShop"></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/products.jsp"></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp"></put-attribute>
+    </definition>
+
+
+    <definition name="welcome" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/products.jsp"></put-attribute>
+    </definition>
+
+
+    <definition name="login" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/login.jsp"></put-attribute>
+    </definition>
+
+
+    <definition name="admin" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/admin.jsp"></put-attribute>
+    </definition>
+
+    <definition name="adminOrders" extends="shop.base">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/myOrders.jsp"></put-attribute>
+    </definition>
+
+    <definition name="adminUsersList" extends="shop.base">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/users.jsp"></put-attribute>
+    </definition>
+
+    <definition name="dba" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/dba.jsp"></put-attribute>
+    </definition>
+
+
+    <definition name="accessDenied" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/accessDenied.jsp"></put-attribute>
+    </definition>
+
+    <definition name="newuser" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/newuser.jsp"></put-attribute>
+    </definition>
+
+    <definition name="about" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/about.jsp"></put-attribute>
+    </definition>
+
+    <definition name="registrationsuccess" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/registrationsuccess.jsp"></put-attribute>
+    </definition>
+
+    <definition name="products" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/products.jsp"></put-attribute>
+    </definition>
+
+    <definition name="product" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/product.jsp"></put-attribute>
+    </definition>
+
+    <definition name="cart" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/cart.jsp"></put-attribute>
+    </definition>
+
+
+    <definition name="addProduct" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/addProduct.jsp"></put-attribute>
+    </definition>
+
+
+    <definition name="editProduct" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/editProduct.jsp"></put-attribute>
+    </definition>
+
+    <definition name="myOrders" extends="shop.base">
+        <put-attribute name="title" value="Shop homepage"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tiles/myOrders.jsp"></put-attribute>
+    </definition>
+
+    <!--<definition name="checkOutCancelled" extends="shop.base">-->
+        <!--<put-attribute name="title" value="Shop homepage"></put-attribute>-->
+        <!--<put-attribute name="body" value="/WEB-INF/flows/checkout/checkOutCancelled.jsp"></put-attribute>-->
+    <!--</definition>-->
+
+
+    <!--<definition name="collectCustomerInfo" extends="shop.base">-->
+        <!--<put-attribute name="title" value="Shop homepage"></put-attribute>-->
+        <!--<put-attribute name="body" value="/WEB-INF/flows/checkout/collectCustomerInfo.jsp"></put-attribute>-->
+    <!--</definition>-->
+
+
+    <!--<definition name="InvalidCartWarning" extends="shop.base">-->
+        <!--<put-attribute name="title" value="Shop homepage"></put-attribute>-->
+        <!--<put-attribute name="body" value="/WEB-INF/flows/checkout/InvalidCartWarning.jsp"></put-attribute>-->
+    <!--</definition>-->
+
+
+    <!--<definition name="orderConfirmation" extends="shop.base">-->
+        <!--<put-attribute name="title" value="Shop homepage"></put-attribute>-->
+        <!--<put-attribute name="body" value="/WEB-INF/flows/checkout/orderConfirmation.jsp"></put-attribute>-->
+    <!--</definition>-->
+
+
+    <!--<definition name="thankCustomer" extends="shop.base">-->
+        <!--<put-attribute name="title" value="Shop homepage"></put-attribute>-->
+        <!--<put-attribute name="body" value="/WEB-INF/flows/checkout/thankCustomer.jsp"></put-attribute>-->
+    <!--</definition>-->
+
+
+
+
+
+
+
+
+</tiles-definitions>
